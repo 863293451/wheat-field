@@ -1,0 +1,46 @@
+server:
+  port: 8080
+  servlet:
+    path: /wheat-field
+  tomcat:
+    uri-encoding: UTF-8
+spring:
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /WEB-INF/jsp/
+  thymeleaf:
+    cache: false
+    enabled: false
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/wheatfield?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 13994880635
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  #≈‰÷√redis
+#  redis:
+#      port: 6379
+#      host: localhost
+#
+#  #≈‰÷√MongoDB
+#  data:
+#      mongodb:
+#        database: 1801
+#        host: localhost
+#        port: 27017
+
+  #≈‰÷√ rabbitMQ
+#  rabbitmq:
+#    host: 127.0.0.1
+#    port: 5672
+#    username: guest
+#    password: guest
+#
+#application:
+#     name: wheat-field
+
